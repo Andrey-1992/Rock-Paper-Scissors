@@ -1,0 +1,105 @@
+main {
+ border: solid black 2px;
+  display: flex;
+  justify-content: center;
+  height: 99vh;
+}
+
+/* User view*/
+
+.user-view {
+  border: solid black 2px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-box {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-info {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Computer view */
+
+.computer-view {
+  border: solid black 2px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.computer-box {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.computer-info {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Game view*/
+
+.game-view {
+  border: solid black 3px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-box {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border: solid black 2px;
+}
+
+.game-fighter-selection {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.classic-game {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.difficult-game {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+/* .header {
+  border: solid black 1px;
+  } /* Should I used this class or better use a header?*/ */
