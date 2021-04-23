@@ -4,13 +4,9 @@ main {
   /* height: 100%; */
   display: flex;
   justify-content: center;
+  height: 99vh;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-
-}
 /* User view*/
 
 .user-view {
@@ -75,9 +71,11 @@ header {
   justify-content: center;
 }
 
-.header {
-  border: solid black 1px;
-} /* Should I used this class or better use a header?*/
+header {
+  display: flex;
+  justify-content: center;
+  border: solid black 2px;
+}
 
 .game-fighter-selection {
   border: solid black 1px;
@@ -96,3 +94,14 @@ header {
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+/* .header {
+  border: solid black 1px;
+  } /* Should I used this class or better use a header?*/ */
