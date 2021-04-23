@@ -34,3 +34,27 @@ header {
   justify-content: center;
   align-items: flex-start;
 }
+
+/* Computer view */
+  
+.computer-view {
+  border: solid black 2px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.computer-box {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.computer-info {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
