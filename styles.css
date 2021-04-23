@@ -1,7 +1,5 @@
 main {
  border: solid black 2px;
- /* width: 20%; */
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   height: 99vh;
