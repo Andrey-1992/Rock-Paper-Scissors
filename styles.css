@@ -36,7 +36,7 @@ header {
 }
 
 /* Computer view */
-  
+
 .computer-view {
   border: solid black 2px;
   width: 20%;
@@ -57,4 +57,42 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+/* Game view*/
+
+.game-view {
+  border: solid black 3px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-box {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  border: solid black 1px;
+} /* Should I used this class or better use a header?*/
+
+.game-fighter-selection {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.classic-game {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.difficult-game {
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
 }
