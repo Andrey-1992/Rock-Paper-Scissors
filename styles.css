@@ -60,6 +60,7 @@ main {
   width: 60%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .game-box {
@@ -81,6 +82,10 @@ header {
   justify-content: center;
 }
 
+.choose-game {
+  display: flex;
+  justify-content: center;
+}
 .classic-game {
   border: solid black 1px;
   display: flex;
@@ -92,14 +97,3 @@ header {
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-/* .header {
-  border: solid black 1px;
-  } /* Should I used this class or better use a header?*/ */
