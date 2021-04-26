@@ -1,8 +1,8 @@
 main {
  border: solid black 2px;
   display: flex;
-  justify-content: center;
   height: 99vh;
+  background-color: rgb(119, 223, 183)
 }
 
 /* User view*/
@@ -11,22 +11,26 @@ main {
   border: solid black 2px;
   width: 20%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.user-box {
+.user-info  {
   border: solid black 1px;
+  width: 60%;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.user-info {
+/* Change Game Button */
+.change-game-view {
   border: solid black 2px;
+  padding-top: 20%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 /* Computer view */
@@ -38,19 +42,14 @@ main {
   justify-content: center;
 }
 
-.computer-box {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .computer-info {
-  border: solid black 2px;
+  border: solid black 1px;
+  width: 60%;
+  height: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Game view*/
@@ -59,41 +58,92 @@ main {
   border: solid black 3px;
   width: 60%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
-.game-box {
-  border: solid black 1px;
+.header {
+  border: solid black 3px;
+  height: 20%;
+}
+
+.game-instructions {
+  border: solid black 3px;
+  height: 10%;
+}
+
+.choose-game-view {
+  border: solid black 3px;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-types-view {
+  border: solid black 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.classic-game {
+  border: solid red 2px;
+  display: flex;
+  /* flex-direction: column; */
+  /* height: : 50%; */
+}
+
+.difficult-game {
+  border: solid red 2px;
+  display: flex;
+  /* flex-direction: column; */
+  /* height: : 50%; */
 }
 
 header {
   display: flex;
   justify-content: center;
+  padding: 40px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Views */
+
+.choose-weapon-view {
   border: solid black 2px;
+  display: flex;
+  flex-direction: row;
 }
 
-.game-fighter-selection {
-  border: solid black 1px;
+.weapon-types-view{
+  border: solid black 5px;
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.choose-game {
+.show-winner-view {
+  border: solid black 5px;
+  height: 100%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.classic-game {
-  border: solid black 1px;
-  display: flex;
-  justify-content: center;
-}
+ /* hidden */
 
-.difficult-game {
-  border: solid black 1px;
-  display: flex;
-  justify-content: center;
+.hidden {
+  display: none;
 }

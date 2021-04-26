@@ -1,35 +1,51 @@
+var human = new Player({
+  name: "human",
+  icon: "humanIcon",
+  score: 0,
+  weapon: ""
+});
+var computer = new Player({
+  name: "computer",
+  icon: "computerIcon",
+  score: 0,
+  weapon: ""
+});
+
 class Game {
-  constructor(player1, player2) {
-    this.human = new Player({name:"human", icon:"humanIcon", score: 0, chooseWeapon: "paper"});
-    this.computer = new Player({name:"computer", icon:"comptureIcon", score: 0, chooseWeapon: "scissors"});
+  constructor() {
+    this.winner = "";
   }
-  classicGame(player1, player2) {
-    if (player1.chooseWeapon === player2.chooseWeapon) {
-      return "It's a DRAW";
-    }
-    if (player1.chooseWeapon === "rock") {
-      if (player2.chooseWeapon === "scissors") {
-        return `${player1.name} Won!`;
-      }
-      if (player2.chooseWeapon === "paper") {
-        return `${player2.name} Won!`;
-      }
-    }
-    if (player1.chooseWeapon === "scissors") {
-      if (player2.chooseWeapon === "paper") {
-        return `${player1.name} Won!`;
-      }
-      if (player2.chooseWeapon === "rock") {
-        return `${player2.name} Won!`;
-      }
-    }
-    if (player1.chooseWeapon === "paper") {
-      if (player2.chooseWeapon === "rock") {
-        return `${player1.name} Won!`;
-      }
-      if (player2.chooseWeapon === "scissors") {
-        return `${player2.name} Won!`;
-      }
+  classicGame() {
+    if (human.weapon === computer.weapon) {
+      this.winner = "It's a DRAW";
+      return this.winner;
+  }
+    if (human.weapon === "rock" && computer.weapon === "scissors") {
+      human.updateScore();
+      this.winner = `${human.name} Won!`;
+      return this.winner;
+  } else if (human.weapon === "rock" && computer.weapon === "paper") {
+      computer.updateScore();
+      this.winner = `${computer.name} Won!`;
+      return this.winner;
+  }
+    if (human.weapon === "scissors" && computer.weapon === "paper") {
+      human.updateScore();
+      this.winner = `${human.name} Won!`;
+      return this.winner;
+  } else if (human.weapon === "scissors" && computer.weapon === "rock") {
+      computer.updateScore();
+      this.winner = `${computer.name} Won!`;
+      return this.winner;
+  }
+    if (human.weapon === "paper" && computer.weapon === "rock") {
+      human.updateScore();
+      this.winner = `${human.name} Won!`;
+      return this.winner;
+    } else if (human.weapon === "paper" && computer.weapon === "scissors") {
+      computer.updateScore();
+      this.winner = `${computer.name} Won!`;
+      return this.winner;
     }
   }
 }
