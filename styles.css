@@ -93,11 +93,15 @@ main {
 .classic-game {
   border: solid red 2px;
   display: flex;
+  /* flex-direction: column; */
+  /* height: : 50%; */
 }
 
 .difficult-game {
   border: solid red 2px;
   display: flex;
+  /* flex-direction: column; */
+  /* height: : 50%; */
 }
 
 header {

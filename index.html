@@ -7,47 +7,61 @@
   <body>
     <main>
       <section class="user-view">
-        <div class="user-box">
-          <section class="user-info">
-            <p>User's Icon</p>
-            <h3>User's Name</h3>
-
-            <p>Computer's Score:<span id="computerScore"></span></p>
-          </section>
+        <div class="user-info">
+          <p>User's Icon</p>
+          <h3>Human</h3>
+          <p>Wins:<span id="humanScore"> 0</span></p>
+        </div>
+        <div class="change-game-view hidden" id="changeGameView">
+          <button id="changeGameBtn">Change Game?</button>
         </div>
       </section>
       <section class="game-view">
-        <div class="game-box">
+        <section class="header">
           <header>
             <h1>Rock, Paper, Scissors</h1>
           </header>
-          <section class="game-fighter-selection">
-            <h3>Choose your <span id="chooseGameOrFighter"> game!</span><h3>
-            </section>
-            <div class="choose-game">
-              <section class="game-view">
-               <section class="classic-game" id="classicGame">
-                  <input type="button" id="classicVersion" value="classic"/>
-                </section>
-                <section class="difficult-game" id="difficultGame">
-                  <input type="button" id="difficultVersion" value="difficult"/>
-                </section>
-              </div>
-            </section>
-          </div>
         </section>
-        <section class="computer-view">
-          <div class="computer-box">
-            <section class="computer-info">
-              <p>Computer's Icon</p>
-              <h3>Computer's Name</h3>
-              <p>Computer's Score:<span id="computerScore"></span></p>
-            </section>
-          </div>
+        <section class="game-instructions">
+            <h3>Choose your <span id="chooseGameOrFighter">game!</span><h3>
         </section>
+        <section class="choose-game-view" id="chooseGameView">
+          <section class="game-types-view" id="gameTypesView">
+            <section class="classic-game" id="classicGame">
+              <input type="button" id="classicVersion" value="classic"/>
+            </section>
+            <section class="difficult-game" id="difficultGame">
+              <input type="button" id="difficultVersion" value="difficult"/>
+            </section>
+          </section>
+          <section class="weapon-types-view hidden" id="weaponTypesView">
+            <label class="rock-weapon" for="rockWeapon"><img src="">
+              <input type="radio" id="rockWeapon" value="rock"/><p>Rock</p>
+            </label>
+            <label class="scissors-weapon" for="scissorsWeapon">
+              <input type="radio" id="scissorsWeapon" value="scissors"/><p>Scissors</p>
+            </label>
+            <label class="paper-weapon" for="paperWeapon">
+              <input type="radio" id="paperWeapon" value="paper"/><p>Paper</p>
+            </label>
+          </section>
+          <section class="show-winner-view hidden" id="showWinnerView">
+            <p>Winer:<p>
+            <p>Human Weapon:</p>
+            <p>Computer Weapon:</p>
+          </section>
+        </section>
+      </section>
+      <section class="computer-view">
+        <div class="computer-info">
+          <p>Computer's Icon</p>
+          <h3>Computer</h3>
+          <p>Wins:<span id="computerScore"> 0</span></p>
+        </div>
+      </section>
     </main>
   </body>
-<script src="./game.js"></script>
 <script src="./player.js"></script>
+<script src="./game.js"></script>
 <script src="./main.js"></script>
 </html>
