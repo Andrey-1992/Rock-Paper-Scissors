@@ -47,7 +47,7 @@ function startClassicGame(event) {
   humanScore.innerText = human.wins;
   computerScore.innerText = computer.wins;
   render();
-  setTimeout(resetGame, 4000);
+  setTimeout(resetGame, 1500);
 }
 
 function resetGame() {
