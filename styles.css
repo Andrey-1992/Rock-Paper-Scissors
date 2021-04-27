@@ -121,7 +121,7 @@ h3 {
 .choose-weapon-view {
   border: solid black 2px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .weapon-types-view{
@@ -133,6 +133,10 @@ h3 {
   align-items: center;
 }
 
+.difficult-weapons {
+  border: solid black 5px;
+}
+
 .show-winner-view {
   border: solid black 5px;
   height: 100%;
@@ -142,6 +146,7 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
  /* hidden */
 
 .hidden {
