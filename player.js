@@ -13,11 +13,13 @@ class Player {
   saveWinsToStorage() {
     var win = this.wins;
     var scoreWin = JSON.stringify(win);
-    localStorage.setItem('scoreWinData', scoreWin);
+    localStorage.setItem(this.name, scoreWin);
   }
   retrieveWinsFromStorage() {
-    var retrievedData = localStorage.getItem('scoreWinData');
+    var retrievedData = localStorage.getItem(this.name);
     var parsedScore = JSON.parse(retrievedData);
+    this.wins = parsedScore;
+    return parsedScore;
   }
   takeTurn() {
 
@@ -29,14 +31,3 @@ class Player {
     this.weapon = weapon;
   }
 }
-
-
-
-
-
-// if (localStorage.getItem("data") === null) {
-//   localStorage.setItem("data", "[]");
-// }
-// var localStorageData = JSON.parse(localStorage.getItem("wins"));
-// localStorageData.push(human);
-// localStorage.setItem("data", JSON.stringify(human));
