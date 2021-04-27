@@ -11,6 +11,10 @@ class Player {
   var randomIndex = Math.floor(Math.random() * this.weapons.length);
   this.weapon = this.weapons[randomIndex];
   }
+  chooseRandomWeaponDifVer() {
+  var randomIndex = Math.floor(Math.random() * this.weaponsDifVer.length);
+  this.weapon = this.weaponsDifVer[randomIndex];
+  }
   saveWinsToStorage() {
     var win = this.wins;
     var scoreWin = JSON.stringify(win);
@@ -23,7 +27,6 @@ class Player {
     return parsedScore;
   }
   takeTurn() {
-
   }
   updateScore() {
    this.wins ++ ;
