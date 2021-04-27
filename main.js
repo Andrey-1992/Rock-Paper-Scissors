@@ -29,6 +29,11 @@ function hide(element) {
   element.classList.add('hidden');
 }
 
+function gameType() {
+  startClassicGame(event)
+  startDifficultGame(event)
+}
+
 function playerScores() {
   human.retrieveWinsFromStorage();
   computer.retrieveWinsFromStorage();
