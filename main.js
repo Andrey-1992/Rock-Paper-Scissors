@@ -35,8 +35,11 @@ function hide(element) {
 }
 
 function gameType() {
-  startClassicGame(event)
-  startDifficultGame(event)
+  if (human.weapons){
+    startClassicGame(event);
+  } else if (human.weaponsDifVer) {
+  startDifficultGame(event);
+  }
 }
 
 function playerScores() {
