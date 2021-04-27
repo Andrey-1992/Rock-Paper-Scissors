@@ -1,9 +1,6 @@
 /* DOM */
 var classicVersion = document.getElementById("classicVersion");
 var difficultVersion = document.getElementById("difficultVersion");
-var rock = document.getElementById("rockWeapon");
-var scissors = document.getElementById("scissorsWeapon");
-var paper = document.getElementById("paperWeapon");
 var difficultWeapons = document.getElementById("difficultWeapons");
 var chooseGameOrFighter = document.getElementById("chooseGameOrFighter");
 var gameTypesView = document.getElementById("gameTypesView");
@@ -16,11 +13,10 @@ var computerScore = document.getElementById("computerScore");
 
 /* Evenet Listeners */
 window.addEventListener("load", playerScores);
-rock.addEventListener('click', startClassicGame);
-scissors.addEventListener('click', startClassicGame);
-paper.addEventListener('click', startClassicGame);
 classicVersion.addEventListener('click', classicVersionGame);
+difficultVersion.addEventListener('click', difficultVersionGame);
 changeGameBtn.addEventListener('click', changeGameVersion);
+weaponTypesView.addEventListener('click', gameType);
 
 var game = new Game();
 
