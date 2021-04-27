@@ -5,6 +5,7 @@ class Player {
     this.wins = 0;
     this.weapon = "";
     this.weapons = ["rock", "scissors", "paper"];
+    this.weaponsDifVer = ["rock", "scissors", "paper", "iguana", "ufo"];
   }
   chooseRandomWeapon() {
   var randomIndex = Math.floor(Math.random() * this.weapons.length);
