@@ -14,8 +14,8 @@ var humanScore = document.getElementById("humanScore");
 var computerScore = document.getElementById("computerScore");
 
 /* Evenet Listeners */
+window.addEventListener("load", playerScores);
 classicVersion.addEventListener('click', classicVersionGame);
-// difficultVersion.addEventListener('click', difficultVersionGame);
 rock.addEventListener('click', startClassicGame);
 scissors.addEventListener('click', startClassicGame);
 paper.addEventListener('click', startClassicGame);
@@ -32,6 +32,13 @@ function hide(element) {
   element.classList.add('hidden');
 }
 
+function playerScores() {
+  human.retrieveWinsFromStorage();
+  computer.retrieveWinsFromStorage();
+  humanScore.innerText = human.wins;
+  computerScore.innerText = computer.wins;
+}
+
 function classicVersionGame() {
   show(weaponTypesView);
   show(changeGameView);
@@ -45,7 +52,8 @@ function startClassicGame(event) {
   game.classicGame();
   computer.saveWinsToStorage();
   human.saveWinsToStorage();
-  // ganadas();
+  human.retrieveWinsFromStorage();
+  computer.retrieveWinsFromStorage();
   humanScore.innerText = human.wins;
   computerScore.innerText = computer.wins;
   render();
@@ -70,8 +78,6 @@ function changeGameVersion() {
 }
 
 function render() {
-  // var parseActivities = JSON.parse(localStorage.getItem('data'))
-  //  var wins = JSON.parse(localStorage.getItem("data"))
   var winnerHTML =
   `<section class="show-winner-view" id="showWinnerView">
     <p>winner: ${game.winner}</p>
@@ -81,12 +87,4 @@ function render() {
   showWinnerView.innerHTML = winnerHTML;
   show(showWinnerView);
   hide(weaponTypesView);
-}
-
-function ganadas() {
-  // var win = human.wins;
-  // var scoreWin = JSON.stringify(win);
-  // localStorage.setItem('scoreWinData', scoreWin);
-  // var retrievedObject = localStorage.getItem('scoreWinData');
-  // var parsedObject = JSON.parse(retrievedObject);
 }
