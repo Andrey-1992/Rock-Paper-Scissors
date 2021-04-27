@@ -1,23 +1,37 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 main {
- border: solid black 2px;
-  display: flex;
-  height: 99vh;
-  background-color: rgb(119, 223, 183)
+border: solid #C0EBEB 5px;
+display: flex;
+height: 99vh;
+color:#FFF;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 
 /* User view*/
 
 .user-view {
-  border: solid black 2px;
+  background-color: #3BA4A5;
   width: 20%;
   display: flex;
+  padding-top: 1%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
 .user-info  {
-  border: solid black 1px;
+  border: solid black #C0EBEB;
+  background-color: #9ADDDE;
   width: 60%;
   height: 30%;
   display: flex;
@@ -25,25 +39,33 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+
 /* Change Game Button */
+
 .change-game-view {
-  border: solid black 2px;
+  /* border: solid black 2px; */
   padding-top: 20%;
   display: flex;
   flex-direction: column;
 }
 
+button {
+  background: #D8EEF3;
+}
+
 /* Computer view */
 
 .computer-view {
-  border: solid black 2px;
+  background-color: #3BA4A5;
   width: 20%;
+  padding-top: 1%;
   display: flex;
   justify-content: center;
 }
 
 .computer-info {
-  border: solid black 1px;
+  border: solid #C0EBEB 1px;
+  background-color: #9ADDDE;
   width: 60%;
   height: 30%;
   display: flex;
@@ -55,24 +77,27 @@ main {
 /* Game view*/
 
 .game-view {
-  border: solid black 3px;
+  background-color: #75D0D0;
+  border: solid #C0EBEB 3px;
   width: 60%;
   display: flex;
   flex-direction: column;
 }
 
 .header {
-  border: solid black 3px;
+  border: solid #C0EBEB 3px;
   height: 20%;
 }
 
 .game-instructions {
-  border: solid black 3px;
+  background-color: #75D0D0;
+  border: solid #C0EBEB 3px;
   height: 10%;
 }
 
 .choose-game-view {
-  border: solid black 3px;
+  border: solid #C0EBEB 3px;
+  background-color: #75D0D0;
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -81,7 +106,6 @@ main {
 }
 
 .game-types-view {
-  border: solid black 5px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -91,14 +115,14 @@ main {
 }
 
 .classic-game {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   display: flex;
   /* flex-direction: column; */
   /* height: : 50%; */
 }
 
 .difficult-game {
-  border: solid red 2px;
+  /* border: solid red 2px; */
   display: flex;
   /* flex-direction: column; */
   /* height: : 50%; */
@@ -119,13 +143,13 @@ h3 {
 /* Views */
 
 .choose-weapon-view {
-  border: solid black 2px;
+  /* border: solid black 2px; */
   display: flex;
   flex-direction: column;
 }
 
 .weapon-types-view{
-  border: solid black 5px;
+  /* border: solid black 5px; */
   height: 100%;
   width: 100%;
   display: flex;
@@ -134,11 +158,11 @@ h3 {
 }
 
 .difficult-weapons {
-  border: solid black 5px;
+  /* border: solid black 5px; */
 }
 
 .show-winner-view {
-  border: solid black 5px;
+  /* border: solid black 5px; */
   height: 100%;
   width: 100%;
   display: flex;
