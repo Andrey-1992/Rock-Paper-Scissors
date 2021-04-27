@@ -4,6 +4,7 @@ var difficultVersion = document.getElementById("difficultVersion");
 var rock = document.getElementById("rockWeapon");
 var scissors = document.getElementById("scissorsWeapon");
 var paper = document.getElementById("paperWeapon");
+var difficultWeapons = document.getElementById("difficultWeapons");
 var chooseGameOrFighter = document.getElementById("chooseGameOrFighter");
 var gameTypesView = document.getElementById("gameTypesView");
 var weaponTypesView = document.getElementById("weaponTypesView");
