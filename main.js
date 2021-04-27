@@ -15,10 +15,10 @@ var computerScore = document.getElementById("computerScore");
 
 /* Evenet Listeners */
 window.addEventListener("load", playerScores);
-classicVersion.addEventListener('click', classicVersionGame);
 rock.addEventListener('click', startClassicGame);
 scissors.addEventListener('click', startClassicGame);
 paper.addEventListener('click', startClassicGame);
+classicVersion.addEventListener('click', classicVersionGame);
 changeGameBtn.addEventListener('click', changeGameVersion);
 
 var game = new Game();
