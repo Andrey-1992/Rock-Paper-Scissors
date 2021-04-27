@@ -24,7 +24,6 @@ changeGameBtn.addEventListener('click', changeGameVersion);
 var game = new Game();
 
 /* Functions */
-// event.target.value
 function show(element) {
   element.classList.remove('hidden');
 }
@@ -44,6 +43,9 @@ function startClassicGame(event) {
   human.chooseWeapon(event.target.value);
   computer.chooseRandomWeapon();
   game.classicGame();
+  computer.saveWinsToStorage();
+  human.saveWinsToStorage();
+  // ganadas();
   humanScore.innerText = human.wins;
   computerScore.innerText = computer.wins;
   render();
@@ -68,6 +70,8 @@ function changeGameVersion() {
 }
 
 function render() {
+  // var parseActivities = JSON.parse(localStorage.getItem('data'))
+  //  var wins = JSON.parse(localStorage.getItem("data"))
   var winnerHTML =
   `<section class="show-winner-view" id="showWinnerView">
     <p>winner: ${game.winner}</p>
@@ -77,4 +81,12 @@ function render() {
   showWinnerView.innerHTML = winnerHTML;
   show(showWinnerView);
   hide(weaponTypesView);
+}
+
+function ganadas() {
+  // var win = human.wins;
+  // var scoreWin = JSON.stringify(win);
+  // localStorage.setItem('scoreWinData', scoreWin);
+  // var retrievedObject = localStorage.getItem('scoreWinData');
+  // var parsedObject = JSON.parse(retrievedObject);
 }

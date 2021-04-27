@@ -11,10 +11,13 @@ class Player {
   this.weapon = this.weapons[randomIndex];
   }
   saveWinsToStorage() {
-
+    var win = this.wins;
+    var scoreWin = JSON.stringify(win);
+    localStorage.setItem('scoreWinData', scoreWin);
   }
   retrieveWinsFromStorage() {
-
+    var retrievedData = localStorage.getItem('scoreWinData');
+    var parsedScore = JSON.parse(retrievedData);
   }
   takeTurn() {
 
@@ -26,3 +29,14 @@ class Player {
     this.weapon = weapon;
   }
 }
+
+
+
+
+
+// if (localStorage.getItem("data") === null) {
+//   localStorage.setItem("data", "[]");
+// }
+// var localStorageData = JSON.parse(localStorage.getItem("wins"));
+// localStorageData.push(human);
+// localStorage.setItem("data", JSON.stringify(human));
