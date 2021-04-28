@@ -1,6 +1,7 @@
 # Rock-Papper-Scissors
 
-![App Demo]([Screen Shot 2021-04-27 at 8.39.54 PM.zip](https://github.com/Andrey-1992/Rock-Papper-Scissors-/files/6388733/Screen.Shot.2021-04-27.at.8.39.54.PM.zip)
+![App Demo](<img width="1140" alt="Rock, Paper, Scissors Game" src="https://user-images.githubusercontent.com/78002374/116338587-35d63e00-a799-11eb-8dff-0b43c1ee2cf2.png">
+)
 )
 
 
