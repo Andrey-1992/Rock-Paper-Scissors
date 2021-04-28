@@ -1,6 +1,7 @@
 # Rock-Papper-Scissors
 
-![App Demo](file:///Users/andrey92/Desktop/Screen%20Shot%202021-04-27%20at%208.39.54%20PM.png>)
+![App Demo]([Screen Shot 2021-04-27 at 8.39.54 PM.zip](https://github.com/Andrey-1992/Rock-Papper-Scissors-/files/6388733/Screen.Shot.2021-04-27.at.8.39.54.PM.zip)
+)
 
 
 # About
