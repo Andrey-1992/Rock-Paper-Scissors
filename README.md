@@ -1,6 +1,7 @@
 # Rock-Papper-Scissors
 
-![App Demo](<img width="1140" alt="Rock, Paper, Scissors Game" src="https://user-images.githubusercontent.com/78002374/116338587-35d63e00-a799-11eb-8dff-0b43c1ee2cf2.png">)
+![App Demo](<img width="1140" alt="Rock, Paper, Scissors Game" src="https://user-images.githubusercontent.com/78002374/116338836-9f564c80-a799-11eb-839f-63173da788b9.png">
+)
 
 
 
