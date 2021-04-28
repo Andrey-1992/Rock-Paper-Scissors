@@ -54,7 +54,7 @@ function classicVersionGame() {
   show(changeGameView);
   hide(gameTypesView);
   hide(difficultWeapons);
-  chooseGameOrFighter.innerText = "fighter!";
+  chooseGameOrFighter.innerText = "Choose your fighter!";
 }
 
 function startClassicGame(event) {
@@ -76,7 +76,7 @@ function difficultVersionGame() {
   show(weaponTypesView);
   show(difficultWeapons);
   hide(gameTypesView);
-  chooseGameOrFighter.innerText = "fighter!";
+  chooseGameOrFighter.innerText = "Choose your fighter!";
 }
 
 function startDifficultGame(event) {
@@ -100,6 +100,8 @@ function resetGame() {
  rock.checked=false;
  scissors.checked=false;
  paper.checked=false;
+ iguana.checked=false;
+ ufo.checked=false;
  hide(showWinnerView);
  show(weaponTypesView);
 }
@@ -108,7 +110,7 @@ function changeGameVersion() {
   hide(changeGameView);
   hide(weaponTypesView);
   show(gameTypesView);
-  chooseGameOrFighter.innerText = "game!";
+  chooseGameOrFighter.innerText = "Choose your fighter!";
 }
 
 function render() {

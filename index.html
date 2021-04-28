@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -23,33 +25,51 @@
           </header>
         </section>
         <section class="game-instructions">
-            <h3>Choose your <span id="chooseGameOrFighter">game!</span><h3>
+            <h3 id="chooseGameOrFighter">Choose your game!</h3>
         </section>
         <section class="choose-game-view" id="chooseGameView">
           <section class="game-types-view" id="gameTypesView">
             <section class="classic-game" id="classicGame">
+              <p>Rock > scissors</p>
+              <p>Scissors > paper</p>
+              <p>Paper > rock</p>
               <input type="button" id="classicVersion" value="classic"/>
             </section>
             <section class="difficult-game" id="difficultGame">
+              <p>Rock > scissors & iguana</p>
+              <p>Scissors > paper & iguana</p>
+              <p>Paper > rock & ufo</p>
+              <p>Iguana > paper & ufo</p>
+              <p>Ufo > scissors & rock</p>
               <input type="button" id="difficultVersion" value="difficult"/>
             </section>
           </section>
           <section class="weapon-types-view hidden" id="weaponTypesView">
-            <label class="rock-weapon" for="rockWeapon"><img src="">
-              <input type="radio" id="rockWeapon" value="rock"/><p>Rock</p>
+            <label class="rock-weapon" for="rockWeapon">
+              <img src="./assets/Rock, Paper & Scissors Icons/rock-hand.png" alt="rock-icon" class="icons">
+              <input type="radio" id="rockWeapon" class="rock-weapon hidden" value="rock"/>
+              <p>Rock</p>
             </label>
             <label class="scissors-weapon" for="scissorsWeapon">
-              <input type="radio" id="scissorsWeapon" value="scissors"/><p>Scissors</p>
+              <img src="./assets/Rock, Paper & Scissors Icons/scissors copy.png" alt="scissors-icon" class="icons">
+              <input type="radio" id="scissorsWeapon" class="scissors-weapon hidden" value="scissors"/>
+              <p>Scissors</p>
             </label>
             <label class="paper-weapon" for="paperWeapon">
-              <input type="radio" id="paperWeapon" value="paper"/><p>Paper</p>
+              <img src="./assets/Rock, Paper & Scissors Icons/lines-paper.png" alt="paper-icon" class="icons">
+              <input type="radio" id="paperWeapon" class="paper-weapon hidden" value="paper"/>
+              <p>Paper</p>
             </label>
             <section class="difficult-weapons hidden" id="difficultWeapons">
               <label class="iguana-weapon" for="iguanaWeapon">
-                <input type="radio" id="iguanaWeapon" value="iguana"/><p>Iguana</p>
+                <img src="./assets/Rock, Paper & Scissors Icons/iguana.png" alt="iguana-icon" class="icons">
+                <input type="radio" id="iguanaWeapon" class="iguana-weapon hidden" value="iguana"/>
+                <p>Iguana</p>
               </label>
               <label class="ufo-weapon" for="ufoWeapon">
-                <input type="radio" id="ufoWeapon" value="ufo"/><p>UFO</p>
+                <img src="./assets/Rock, Paper & Scissors Icons/ufo.png" alt="ufo-icon" class="icons">
+                <input type="radio" id="ufoWeapon" class="ufo-weapon hidden" value="ufo"/>
+                <p>UFO</p>
               </label>
             </section>
           </section>
