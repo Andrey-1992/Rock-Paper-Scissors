@@ -1,9 +1,5 @@
 * {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
+  font-family: 'Freckle Face', cursive;
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
@@ -31,6 +27,7 @@ font-family: 'Roboto', sans-serif;
 
 .user-info  {
   border: solid black #C0EBEB;
+  font-family: 'Freckle Face', cursive;
   background-color: #9ADDDE;
   width: 60%;
   height: 30%;
@@ -43,13 +40,13 @@ font-family: 'Roboto', sans-serif;
 /* Change Game Button */
 
 .change-game-view {
-  /* border: solid black 2px; */
   padding-top: 20%;
   display: flex;
   flex-direction: column;
 }
 
 button {
+  font-family: 'Freckle Face', cursive;
   background: #D8EEF3;
 }
 
@@ -65,6 +62,7 @@ button {
 
 .computer-info {
   border: solid #C0EBEB 1px;
+  font-family: 'Freckle Face', cursive;
   background-color: #9ADDDE;
   width: 60%;
   height: 30%;
@@ -90,6 +88,7 @@ button {
 }
 
 .game-instructions {
+  font-family: 'Freckle Face', cursive;
   background-color: #75D0D0;
   border: solid #C0EBEB 3px;
   height: 10%;
@@ -115,56 +114,82 @@ button {
 }
 
 .classic-game {
-  /* border: solid red 2px; */
   display: flex;
-  /* flex-direction: column; */
-  /* height: : 50%; */
+  border: solid #C0EBEB 3px;
+  border-radius: 15%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .difficult-game {
-  /* border: solid red 2px; */
   display: flex;
-  /* flex-direction: column; */
-  /* height: : 50%; */
+  border: solid #C0EBEB 3px;
+  border-radius: 15%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header {
   display: flex;
   justify-content: center;
-  padding: 40px;
+}
+
+h1 {
+  font-family: 'Freckle Face', cursive;
+  font-size: 50px;
+  padding-bottom: 20px;
 }
 
 h3 {
   display: flex;
   justify-content: center;
+  font-family: 'Freckle Face', cursive;
+  font-size: 130%;
   padding: 10px;
+}
+
+p {
+  font-family: 'Freckle Face', cursive;
 }
 
 /* Views */
 
 .choose-weapon-view {
-  /* border: solid black 2px; */
   display: flex;
   flex-direction: column;
 }
 
 .weapon-types-view{
-  /* border: solid black 5px; */
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
 .difficult-weapons {
-  /* border: solid black 5px; */
+  display: flex;
+  flex-direction: row;
 }
 
 .show-winner-view {
-  /* border: solid black 5px; */
   height: 100%;
   width: 100%;
+  font-size: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  width: 70%;
+}
+
+label {
   display: flex;
   flex-direction: column;
   justify-content: center;
