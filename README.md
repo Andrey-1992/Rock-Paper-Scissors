@@ -1,7 +1,6 @@
 # Rock-Papper-Scissors
 
-![App Demo](<img width="1140" alt="Screen Shot 2021-04-27 at 8 39 54 PM" src="https://user-images.githubusercontent.com/78002374/116338320-c6f8e500-a798-11eb-8d85-358f56d9bb70.png">
-)
+![App Demo](file:///Users/andrey92/Desktop/Screen%20Shot%202021-04-27%20at%208.39.54%20PM.png>)
 
 
 # About
